@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --skyblue: #55aefe;
+}
+
+html {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+header {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+header div {
+  width: 80px;
+}
+header div img {
+  width: 100%;
+  position: relative;
+}
+header nav {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 10px 100px;
+  }
+  header div {
+    width: 100px;
+  }
+}
+main {
+  text-align: center;
+}
+main .bannerImage img {
+  width: 100%;
+}
+main .bannerText {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+main .bannerText h1 {
+  margin-top: 20px;
+  font-size: 3rem;
+}
+main .bannerText h2 {
+  margin: 20px 0;
+  color: var(--skyblue);
+  font-size: 2rem;
+  border-bottom: 3px solid #3576b0;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+main .bannerText div {
+  width: 80%;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+main .bannerText div img {
+  width: 100%;
+}
+main .solution {
+  text-align: center;
+  font-size: 1.5rem;
+}
+main .solution h2 {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+  color: var(--skyblue);
+  font-size: 2rem;
+}
+main .solution img {
+  width: 100%;
+}
+main .solution p {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+main .benefits #benefitsBG {
+  display: none;
+}
+main .benefits .wrapper {
+  width: 90%;
+  margin: 0 auto;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+main .benefits .wrapper h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--skyblue);
+}
+main .benefits .wrapper .cards div {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+main .benefits .wrapper .cards div .imageContainer img {
+  width: 100%;
+}
+main .benefits .wrapper .cards div .imageContainer p {
+  position: absolute;
+  margin-top: -50px;
+  color: var(--skyblue);
+  font-size: 10rem;
+}
+main .benefits .wrapper .cards div .imageInfo {
+  font-size: 1.5rem;
+}
+main .benefits .wrapper .cards div .imageInfo h3 {
+  color: var(--skyblue);
+  font-size: 2rem;
+}
+main .functions .wrapper {
+  width: 90%;
+  margin: 0 auto;
+  color: var(--skyblue);
+}
+main .functions .wrapper img {
+  width: 50%;
+}
+main .functions .wrapper h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+main .functions .wrapper h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+main .functions .wrapper p {
+  font-size: 1.5rem;
+  color: #000;
+  margin-top: 20px;
+}
+main .functions .wrapper button {
+  width: 100%;
+  border: 0;
+  background-color: var(--skyblue);
+  font-size: 3rem;
+  color: #fff;
+  font-family: "Barlow Condensed", sans-serif;
+  padding: 10px;
+  margin: 20px 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+main .functions .wrapper button:hover {
+  opacity: 0.8;
+}
+main .functions .wrapper div ul {
+  list-style: none;
+  text-align: left;
+  font-size: 1.5rem;
+}
+main .functions .wrapper div ul i {
+  color: #3576b0;
+  margin-right: 20px;
+}
+main .functions img {
+  width: 100%;
+}
+main .faq {
+  width: 90%;
+  margin: 0 auto;
+}
+main .faq h2 {
+  margin-top: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--skyblue);
+}
+main .faq h3 {
+  font-style: italic;
+}
+main .faq h4 {
+  margin: 20px 0;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  main .bannerImage {
+    height: 70vh;
+    position: relative;
+  }
+  main .bannerImage img {
+    position: relative;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .bannerText {
+    width: 50%;
+  }
+  main .bannerText h1 {
+    margin-top: 40px;
+    font-size: 4rem;
+  }
+  main .bannerText h2 {
+    font-size: 3rem;
+    margin: 30px 0;
+    padding-bottom: 30px;
+  }
+  main .bannerText p {
+    font-size: 2rem;
+  }
+  main .solution h2 {
+    font-size: 4rem;
+    padding: 30px 0;
+  }
+  main .solution p {
+    width: 50%;
+    max-width: 1000px;
+    font-size: 2rem;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  main .benefits {
+    position: relative;
+  }
+  main .benefits #benefitsBG {
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    display: inline-block;
+    top: 25%;
+    left: 0;
+    z-index: -1;
+  }
+  main .benefits .wrapper h2 {
+    justify-content: space-between;
+    font-size: 3rem;
+  }
+  main .benefits .wrapper .cards div {
+    flex-direction: row;
+  }
+  main .benefits .wrapper .cards div .imageContainer p {
+    font-size: 8rem;
+    margin-top: -50px;
+  }
+  main .benefits .wrapper .cards div .imageContainer img {
+    width: 300px;
+  }
+  main .benefits .wrapper .cards div .imageInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+  main .benefits .wrapper .cards div .imageInfo h3 {
+    color: var(--skyblue);
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  main .benefits .wrapper .cards div .imageInfo p {
+    font-size: 1.8rem;
+  }
+  main .functions .wrapper h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+  main .functions .wrapper h3 {
+    font-size: 4rem;
+  }
+  main .functions .wrapper p {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 2rem;
+  }
+  main .functions .wrapper div {
+    display: flex;
+    justify-content: space-around;
+  }
+  main .functions .wrapper div ul {
+    width: 40%;
+    font-size: 2rem;
+  }
+  main .functions .wrapper div ul li {
+    display: flex;
+  }
+  main .functions .wrapper button {
+    cursor: pointer;
+    font-size: 4rem;
+    width: auto;
+    padding: 10px 30px;
+  }
+  main .faq {
+    width: 50%;
+  }
+  main .faq h2 {
+    font-size: 3rem;
+  }
+  main .faq h3 {
+    color: grey;
+  }
+  main .faq h4 {
+    font-size: 2rem;
+  }
+  main .faq p {
+    font-size: 1.2rem;
+    color: grey;
+  }
+}/*# sourceMappingURL=styles.css.map */
