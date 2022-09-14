@@ -118,14 +118,19 @@ main .benefits .wrapper .cards div {
   flex-direction: column;
   margin: 20px 0;
 }
+main .benefits .wrapper .cards div .imageContainer {
+  width: 50%;
+  margin: 0 auto;
+}
 main .benefits .wrapper .cards div .imageContainer img {
   width: 100%;
 }
 main .benefits .wrapper .cards div .imageContainer p {
   position: absolute;
   margin-top: -50px;
+  margin-left: -25px;
   color: var(--skyblue);
-  font-size: 10rem;
+  font-size: 8rem;
 }
 main .benefits .wrapper .cards div .imageInfo {
   font-size: 1.5rem;
@@ -154,20 +159,18 @@ main .functions .wrapper p {
   font-size: 1.5rem;
   color: #000;
   margin-top: 20px;
+  padding-bottom: 50px;
 }
-main .functions .wrapper button {
-  width: 100%;
-  border: 0;
+main .functions .wrapper a {
   background-color: var(--skyblue);
   font-size: 3rem;
   color: #fff;
-  font-family: "Barlow Condensed", sans-serif;
-  padding: 10px;
-  margin: 20px 0;
+  padding: 10px 20px;
   transition: 0.3s;
   cursor: pointer;
+  text-decoration: none;
 }
-main .functions .wrapper button:hover {
+main .functions .wrapper a:hover {
   opacity: 0.8;
 }
 main .functions .wrapper div ul {
@@ -180,6 +183,7 @@ main .functions .wrapper div ul i {
   margin-right: 20px;
 }
 main .functions img {
+  margin-top: 50px;
   width: 100%;
 }
 main .faq {
@@ -200,6 +204,90 @@ main .faq h4 {
   font-weight: 500;
   font-size: 1.5rem;
 }
+main .promo {
+  margin: 0 auto;
+}
+main .promo h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--skyblue);
+  margin-bottom: 20px;
+}
+main .promo div {
+  background-color: #eee;
+  padding: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+main .promo div img {
+  width: 100%;
+}
+main .promo div a {
+  position: absolute;
+  bottom: -50px;
+  font-size: 2rem;
+  text-decoration: none;
+  background-color: var(--skyblue);
+  color: #fff;
+  padding: 20px 40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+main .promo div a:hover {
+  opacity: 0.8;
+}
+main .reviews {
+  margin-top: 100px;
+}
+main .reviews h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--skyblue);
+}
+main .reviews div {
+  color: #bb6031;
+}
+main .reviews .card {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 0;
+  color: #000;
+  font-style: italic;
+  text-align: left;
+}
+main .reviews .card span {
+  font-style: normal;
+}
+main .reviews .card img {
+  width: 100px;
+  margin-right: 20px;
+}
+@media (min-width: 768px) {
+  main .reviews {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+  main .reviews div i {
+    font-size: 2rem;
+  }
+  main .reviews h2 {
+    font-size: 3rem;
+  }
+  main .reviews .card {
+    font-size: 1.8rem;
+  }
+  main .reviews .card img {
+    width: 150px;
+    margin-right: 50px;
+  }
+}
+
 @media (min-width: 768px) {
   main .bannerImage {
     height: 70vh;
@@ -259,6 +347,7 @@ main .faq h4 {
   main .benefits .wrapper .cards div .imageContainer p {
     font-size: 8rem;
     margin-top: -50px;
+    margin-left: 0;
   }
   main .benefits .wrapper .cards div .imageContainer img {
     width: 300px;
@@ -301,7 +390,7 @@ main .faq h4 {
   main .functions .wrapper div ul li {
     display: flex;
   }
-  main .functions .wrapper button {
+  main .functions .wrapper a {
     cursor: pointer;
     font-size: 4rem;
     width: auto;
@@ -318,9 +407,25 @@ main .faq h4 {
   }
   main .faq h4 {
     font-size: 2rem;
+    margin-top: 20px;
   }
   main .faq p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: grey;
+  }
+  main .promo h2 {
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px 0;
+    font-size: 3rem;
+  }
+  main .promo div {
+    padding: 150px 0;
+  }
+  main .promo div img {
+    width: 50%;
+  }
+  main .promo div a {
+    font-size: 4rem;
   }
 }/*# sourceMappingURL=styles.css.map */

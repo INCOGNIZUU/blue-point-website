@@ -135,6 +135,8 @@ main {
                 margin: 20px 0;
 
                 .imageContainer {
+                    width: 50%;
+                    margin: 0 auto;
                     img {
                         width: 100%;
                     }
@@ -142,8 +144,9 @@ main {
                     p {
                         position: absolute;
                         margin-top: -50px;
+                        margin-left: -25px;
                         color: var(--skyblue);
-                        font-size: 10rem;
+                        font-size: 8rem;
                     }
                 }
                 .imageInfo {
@@ -181,21 +184,19 @@ main {
                 font-size: 1.5rem;
                 color: #000;
                 margin-top: 20px;
+                padding-bottom: 50px;
             }
 
-            button {
-                width: 100%;
-                border: 0;
+            a {
                 background-color: var(--skyblue);
                 font-size: 3rem;
                 color: #fff;
-                font-family: "Barlow Condensed", sans-serif;
-                padding: 10px;
-                margin: 20px 0;
+                padding: 10px 20px;
                 transition: 0.3s;
                 cursor: pointer;
+                text-decoration: none;
             }
-            button:hover {
+            a:hover {
                 opacity: 0.8;
             }
 
@@ -214,6 +215,7 @@ main {
         }
 
         img {
+            margin-top: 50px;
             width: 100%;
         }
     }
@@ -238,7 +240,102 @@ main {
             font-size: 1.5rem;
         }
     }
+
+    .promo {
+        margin: 0 auto;
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--skyblue);
+            margin-bottom: 20px;
+        }
+
+        div {
+            background-color: #eee;
+            padding: 50px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+
+            img {
+                width: 100%;
+            }
+
+            a {
+                position: absolute;
+                bottom: -50px;
+                font-size: 2rem;
+                text-decoration: none;
+                background-color: var(--skyblue);
+                color: #fff;
+                padding: 20px 40px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            a:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+    .reviews {
+        margin-top: 100px;
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--skyblue);
+        }
+
+        div {
+            color: #bb6031;
+        }
+
+        .card {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px 0;
+            color: #000;
+            font-style: italic;
+            text-align: left;
+
+            span {
+                font-style: normal;
+            }
+            img {
+                width: 100px;
+                margin-right: 20px;
+            }
+        }
+    }
     @media (min-width: 768px) {
+        .reviews {
+            width: 50%;
+            margin: 0 auto;
+            padding-top: 100px;
+
+            div {
+                i {
+                    font-size: 2rem;
+                }
+            }
+
+            h2 {
+                font-size: 3rem;
+            }
+
+            .card {
+                font-size: 1.8rem;
+                img {
+                    width: 150px;
+                    margin-right: 50px;
+                }
+            }
+        }
     }
 }
 @media (min-width: 768px) {
@@ -313,6 +410,7 @@ main {
                         p {
                             font-size: 8rem;
                             margin-top: -50px;
+                            margin-left: 0;
                         }
                         img {
                             width: 300px;
@@ -368,7 +466,7 @@ main {
                     }
                 }
 
-                button {
+                a {
                     cursor: pointer;
                     font-size: 4rem;
                     width: auto;
@@ -387,10 +485,32 @@ main {
             }
             h4 {
                 font-size: 2rem;
+                margin-top: 20px;
             }
             p {
-                font-size: 1.2rem;
+                font-size: 1.5rem;
                 color: grey;
+            }
+        }
+
+        .promo {
+            h2 {
+                width: 50%;
+                margin: 0 auto;
+                padding: 50px 0;
+                font-size: 3rem;
+            }
+
+            div {
+                padding: 150px 0;
+
+                img {
+                    width: 50%;
+                }
+
+                a {
+                    font-size: 4rem;
+                }
             }
         }
     }
