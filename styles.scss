@@ -239,6 +239,10 @@ main {
             font-weight: 500;
             font-size: 1.5rem;
         }
+
+        p {
+            display: none;
+        }
     }
 
     .promo {
@@ -279,6 +283,7 @@ main {
             }
         }
     }
+
     .reviews {
         margin-top: 100px;
 

@@ -204,6 +204,9 @@ main .faq h4 {
   font-weight: 500;
   font-size: 1.5rem;
 }
+main .faq p {
+  display: none;
+}
 main .promo {
   margin: 0 auto;
 }
